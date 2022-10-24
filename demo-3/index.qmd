@@ -1,0 +1,140 @@
+---
+title: "Mock Paper"
+subtitle: "A reproducible manuscript written in Quarto."
+format: 
+  html:
+    toc: true
+    code-link: true
+    code-fold: true
+    code-tools: true
+execute:
+  warning: false
+  error: false
+bibliography: references.bib
+---
+
+## Introduction
+
+What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
+
+## Data
+
+```{r}
+
+## Dependencies
+library(tidyverse)
+library(reactable) ## Interactive tables
+library(highcharter) ## Interactive viz
+library(sjPlot) ## Model sumamry
+library(lme4) ## Mixed models
+
+## Figure 1 Data
+data_fig1 =  data.frame(
+    stringsAsFactors = FALSE,
+    name = c(
+      "The Left",
+      "Social Democratic Party",
+      "Alliance 90/The Greens",
+      "Free Democratic Party",
+      "Christian Democratic Union",
+      "Christian Social Union in Bavaria",
+      "Alternative for Germany"
+    ),
+    count = c(69, 153, 67, 80, 200, 46, 94),
+    col = c("#BE3075", "#EB001F", "#64A12D", "#FFED00",
+            "#000000", "#008AC5", "#009EE0"
+    ),
+    abbrv = c("DIE LINKE", "SPD", "GR???NE", "FDP", "CDU", "CSU", "AfD")
+  )
+
+## Figure 2 Data
+data(GNI2014, package = "treemap")
+data_fig2 = GNI2014  
+
+
+## Figure 3 Data
+data("sleepstudy")
+data("efc")
+efc$cluster <- as.factor(efc$e15relat)
+```
+
+For this paper we will be using some dummy data. The libraries and data simulation or imports are shown above.
+
+## Methods
+
+```{r}
+m1 <- lmer(neg_c_7 ~ c160age + c161sex + e42dep + (1 | cluster), data = efc)
+m2 <- lmer(Reaction ~ Days + (1 + Days | Subject), data = sleepstudy)
+```
+
+We fit the following model. We specificied age as What did the fox say.
+
+$$
+y = x_1\beta_1 + x_2\beta_2 + x_2^2\beta_3 + \varepsilon
+$$ {#eq-model}
+
+## Results
+
+### Foxes are not green
+
+What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
+
+```{r}
+#| label: fig-plot
+#| fig-cap: "The distribution of something for something."
+
+hchart(
+  data_fig1,
+  "item",
+  hcaes(
+    name = name,
+    y = count,
+    label = abbrv,
+    color = col
+  ),
+  name = "Representatives",
+  showInLegend = TRUE,
+  size = "100%",
+  center = list("50%", "75%"),
+  startAngle = -100,
+  endAngle  = 100
+)  
+```
+
+### Foxes like maps
+
+What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
+
+```{r}
+#| label: fig-map
+#| fig-cap: "Foxes realy like maps but are hard to find."
+
+hcmap(
+    "custom/world-robinson-lowres",
+    data = GNI2014,
+    name = "Gross national income per capita",
+    value = "GNI",
+    borderWidth = 0,
+    nullColor = "#d3d3d3",
+    joinBy = c("iso-a3", "iso3")
+  ) |>
+    hc_colorAxis(
+      stops = color_stops(colors = viridisLite::inferno(10, begin = 0.1)),
+      type = "logarithmic"
+    )
+```
+
+### Model
+
+What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
+
+```{r}
+#| label: tbl-map
+#| tbl-cap: "Foxes realy like maps but are hard to find."
+
+tab_model(m1, m2)
+```
+
+## Discussion
+
+Foxes are cute @Fox2020. We also show this in @fig-plot. However our modeling reports that tail length significantly affects cuteness, see @tbl-map. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
