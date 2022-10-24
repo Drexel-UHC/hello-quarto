@@ -2,7 +2,7 @@
 title: "Hello Quarto"
 subtitle: "A document to demo Quarto features"
 toc: true
-format: html
+format: revealjs
 bibliography: references.bib
 ---
 

@@ -4,3 +4,6 @@
       url: 'https://quartopub.com/sites/ranli/hello-quarto'
     - id: 5ff3a4ce-0e77-49b3-b2c6-8611ffc00e66
       url: 'https://quartopub.com/sites/ranli/hello-quarto-53fc'
+  netlify:
+    - id: 7c75ac84-ca36-4870-99fb-c7d84aa6f7cc
+      url: 'https://incredible-cajeta-b8df80.netlify.app'
