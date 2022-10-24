@@ -4,8 +4,6 @@ subtitle: "A reproducible manuscript written in Quarto."
 format: 
   html:
     toc: true
-    code-link: true
-    code-fold: true
     code-tools: true
 execute:
   warning: false
@@ -73,9 +71,8 @@ $$
 y = x_1\beta_1 + x_2\beta_2 + x_2^2\beta_3 + \varepsilon
 $$ {#eq-model}
 
-## Results
 
-### Foxes are not green
+## Foxes are not green
 
 What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
 
@@ -101,7 +98,7 @@ hchart(
 )  
 ```
 
-### Foxes like maps
+## Foxes like maps
 
 What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
 
@@ -124,7 +121,7 @@ hcmap(
     )
 ```
 
-### Model
+## Model
 
 What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.
 
