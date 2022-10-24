@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -34,13 +53,23 @@ ul.task-list li input[type="checkbox"] {
 <link href="hello_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="hello_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#batteries-included" id="toc-batteries-included" class="nav-link" data-scroll-target="#batteries-included">Batteries included</a></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -64,15 +93,48 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>This section is all <strong>prose</strong>. Quarto allows us to <em>weave computation</em> and prose into publication and web ready outputs. Visit the <a href="https://quarto.org/">Quarto website to get started.</a></p>
-<div class="quarto-figure quarto-figure-center">
+<div id="ref" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_1920.png" class="img-fluid figure-img" alt="Quarto schematic"></p>
 <p></p><figcaption class="figure-caption">Quarto schematic</figcaption><p></p>
 </figure>
 </div>
 </section>
+<section id="batteries-included" class="level2">
+<h2 class="anchored" data-anchor-id="batteries-included">Batteries included</h2>
+<p>Quarto comes with very useful technical + publication features!</p>
+<p><strong>Table of Contents:</strong></p>
+<p>In the YAML we can specify <code>toc: true</code></p>
+<p><strong>Latex</strong></p>
+<p><span id="eq-energy"><span class="math display">\[
+e=mc^2
+\tag{1}\]</span></span></p>
+<p><span id="eq-lorenz"><span class="math display">\[
+x^n+y^n=z^n
+\tag{2}\]</span></span></p>
+<p>Inline latex <span class="math inline">\(x^n+y^n=z^n\)</span> can also be written</p>
+<p><strong>Citations</strong></p>
+<ul>
+<li>DOI: <span class="citation" data-cites="quistberg2018">(<a href="#ref-quistberg2018" role="doc-biblioref">Quistberg et al. 2018</a>)</span></li>
+<li>PubMed: <span class="citation" data-cites="Packer2021">(<a href="#ref-Packer2021" role="doc-biblioref">Packer et al. 2021</a>)</span></li>
+<li>inline citation: according to <span class="citation" data-cites="Sparkes2022">Sparkes (<a href="#ref-Sparkes2022" role="doc-biblioref">2021</a>)</span> cats are awesome!</li>
+</ul>
+<p><strong>Cross references</strong></p>
+<p>Cross references make it easier for readers to navigate your document by providing numbered references and hyperlinks to figures, tabs, equations and sections. For example we can reference <a href="#eq-lorenz">Equation&nbsp;2</a>. The number will automatically update when you change ordering so you don’t have to!</p>
 
-</main>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Packer2021" class="csl-entry" role="doc-biblioentry">
+Packer, Rowena M. A., Claire L. Brand, Zoe Belshaw, Camilla L. Pegram, Kim B. Stevens, and Dan G. O’Neill. 2021. <span>“Pandemic Puppies: Characterising Motivations and Behaviours of UK Owners Who Purchased Puppies During the 2020 COVID-19 Pandemic.”</span> <em>Animals</em> 11 (9): 2500. <a href="https://doi.org/10.3390/ani11092500">https://doi.org/10.3390/ani11092500</a>.
+</div>
+<div id="ref-quistberg2018" class="csl-entry" role="doc-biblioentry">
+Quistberg, D. Alex, Ana V. Diez Roux, Usama Bilal, Kari Moore, Ana Ortigoza, Daniel A. Rodriguez, Olga L. Sarmiento, et al. 2018. <span>“Building a Data Platform for Cross-Country Urban Health Studies: The SALURBAL Study.”</span> <em>Journal of Urban Health</em> 96 (2): 311–37. <a href="https://doi.org/10.1007/s11524-018-00326-0">https://doi.org/10.1007/s11524-018-00326-0</a>.
+</div>
+<div id="ref-Sparkes2022" class="csl-entry" role="doc-biblioentry">
+Sparkes, Andrew H. 2021. <span>“Human Allergy to Cats: A Review of the Impact on Cat Ownership and Relinquishment.”</span> <em>Journal of Feline Medicine and Surgery</em> 24 (1): 43–52. <a href="https://doi.org/10.1177/1098612x211013016">https://doi.org/10.1177/1098612x211013016</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

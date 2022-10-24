@@ -1,12 +1,43 @@
 ---
 title: "Hello Quarto"
 subtitle: "A document to demo Quarto features"
+toc: true
 format: html
+bibliography: references.bib
 ---
 
 ## Introduction
 
 This section is all **prose**. Quarto allows us to *weave computation* and prose into publication and web ready outputs. Visit the [Quarto website to get started.](https://quarto.org/)
 
+![Quarto schematic](images/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_1920.png){#ref fig-alt="Quarto schematic"}
 
-![Quarto schematic](images/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_1920.png){fig-alt="Quarto schematic"}
+## Batteries included
+
+Quarto comes with very useful technical + publication features!
+
+**Table of Contents:**
+
+In the YAML we can specify `toc: true`
+
+**Latex**
+
+$$
+e=mc^2
+$$ {#eq-energy}
+
+$$
+x^n+y^n=z^n
+$$ {#eq-lorenz}
+
+Inline latex $x^n+y^n=z^n$ can also be written
+
+**Citations**
+
+-   DOI: [@quistberg2018]
+-   PubMed: [@Packer2021]
+-   inline citation: according to @Sparkes2022 cats are awesome!
+
+**Cross references**
+
+Cross references make it easier for readers to navigate your document by providing numbered references and hyperlinks to figures, tabs, equations and sections. For example we can reference @eq-lorenz. The number will automatically update when you change ordering so you don't have to!
