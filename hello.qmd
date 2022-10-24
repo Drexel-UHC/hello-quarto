@@ -1,0 +1,12 @@
+---
+title: "Hello Quarto"
+subtitle: "A document to demo Quarto features"
+format: html
+---
+
+## Introduction
+
+This section is all **prose**. Quarto allows us to *weave computation* and prose into publication and web ready outputs. Visit the [Quarto website to get started.](https://quarto.org/)
+
+
+![Quarto schematic](images/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_1920.png){fig-alt="Quarto schematic"}
