@@ -66,7 +66,16 @@ div.csl-indent {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#batteries-included" id="toc-batteries-included" class="nav-link" data-scroll-target="#batteries-included">Batteries included</a></li>
+  <li><a href="#batteries-included" id="toc-batteries-included" class="nav-link" data-scroll-target="#batteries-included">Batteries included</a>
+  <ul class="collapse">
+  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents">Table of Contents</a></li>
+  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex">Latex</a></li>
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
+  <li><a href="#cross-references" id="toc-cross-references" class="nav-link" data-scroll-target="#cross-references">Cross references</a></li>
+  <li><a href="#callouts" id="toc-callouts" class="nav-link" data-scroll-target="#callouts">Callouts</a></li>
+  <li><a href="#tabsets" id="toc-tabsets" class="nav-link" data-scroll-target="#tabsets">Tabsets</a></li>
+  </ul></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul>
 </nav>
 </div>
@@ -90,9 +99,9 @@ div.csl-indent {
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This section is all <strong>prose</strong>. Quarto allows us to <em>weave computation</em> and prose into publication and web ready outputs. Visit the <a href="https://quarto.org/">Quarto website to get started.</a></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><strong>Quarto</strong> allows us to <em>weave computation</em> and prose into publication and web ready outputs. Visit the <a href="https://quarto.org/">Quarto website to get started.</a></p>
 <div id="ref" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_1920.png" class="img-fluid figure-img" alt="Quarto schematic"></p>
@@ -100,12 +109,15 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="batteries-included" class="level2">
-<h2 class="anchored" data-anchor-id="batteries-included">Batteries included</h2>
+<section id="batteries-included" class="level1">
+<h1>Batteries included</h1>
 <p>Quarto comes with very useful technical + publication features!</p>
-<p><strong>Table of Contents:</strong></p>
+<section id="table-of-contents" class="level2">
+<h2 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h2>
 <p>In the YAML we can specify <code>toc: true</code></p>
-<p><strong>Latex</strong></p>
+</section>
+<section id="latex" class="level2">
+<h2 class="anchored" data-anchor-id="latex">Latex</h2>
 <p><span id="eq-energy"><span class="math display">\[
 e=mc^2
 \tag{1}\]</span></span></p>
@@ -113,18 +125,75 @@ e=mc^2
 x^n+y^n=z^n
 \tag{2}\]</span></span></p>
 <p>Inline latex <span class="math inline">\(x^n+y^n=z^n\)</span> can also be written</p>
-<p><strong>Citations</strong></p>
+</section>
+<section id="citations" class="level2">
+<h2 class="anchored" data-anchor-id="citations">Citations</h2>
 <ul>
 <li>DOI: <span class="citation" data-cites="quistberg2018">(<a href="#ref-quistberg2018" role="doc-biblioref">Quistberg et al. 2018</a>)</span></li>
 <li>PubMed: <span class="citation" data-cites="Packer2021">(<a href="#ref-Packer2021" role="doc-biblioref">Packer et al. 2021</a>)</span></li>
 <li>inline citation: according to <span class="citation" data-cites="Sparkes2022">Sparkes (<a href="#ref-Sparkes2022" role="doc-biblioref">2021</a>)</span> cats are awesome!</li>
 </ul>
-<p><strong>Cross references</strong></p>
-<p>Cross references make it easier for readers to navigate your document by providing numbered references and hyperlinks to figures, tabs, equations and sections. For example we can reference <a href="#eq-lorenz">Equation&nbsp;2</a>. The number will automatically update when you change ordering so you don’t have to!</p>
+</section>
+<section id="cross-references" class="level2">
+<h2 class="anchored" data-anchor-id="cross-references">Cross references</h2>
+<p>We can reference <a href="#eq-lorenz">Equation&nbsp;2</a>.</p>
+</section>
+<section id="callouts" class="level2">
+<h2 class="anchored" data-anchor-id="callouts">Callouts</h2>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a Note callout.</p>
+</div>
+</div>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Click here for a warning!
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>DANGER WILL ROBINSON!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="tabsets" class="level2">
+<h2 class="anchored" data-anchor-id="tabsets">Tabsets</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Visualization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Model Results</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>data table</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>plot</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>model summary</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="reference" class="level1 unnumbered">
+
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Reference</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-Packer2021" class="csl-entry" role="doc-biblioentry">
 Packer, Rowena M. A., Claire L. Brand, Zoe Belshaw, Camilla L. Pegram, Kim B. Stevens, and Dan G. O’Neill. 2021. <span>“Pandemic Puppies: Characterising Motivations and Behaviours of UK Owners Who Purchased Puppies During the 2020 COVID-19 Pandemic.”</span> <em>Animals</em> 11 (9): 2500. <a href="https://doi.org/10.3390/ani11092500">https://doi.org/10.3390/ani11092500</a>.
 </div>

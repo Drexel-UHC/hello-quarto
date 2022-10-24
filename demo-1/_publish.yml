@@ -1,0 +1,6 @@
+- source: hello.qmd
+  quarto-pub:
+    - id: 7d4e79ee-963b-4429-a7eb-e3ebb60e6c1c
+      url: 'https://quartopub.com/sites/ranli/hello-quarto'
+    - id: 5ff3a4ce-0e77-49b3-b2c6-8611ffc00e66
+      url: 'https://quartopub.com/sites/ranli/hello-quarto-53fc'
