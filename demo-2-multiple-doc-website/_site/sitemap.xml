@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/blog.html</loc>
+    <lastmod>2022-10-25T03:35:38.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/index.html</loc>
+    <lastmod>2022-10-25T03:35:38.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/posts/demo-1a-single-doc-prose/index.html</loc>
+    <lastmod>2022-10-25T03:35:39.194Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/posts/demo-1c-single-doc-code/index.html</loc>
+    <lastmod>2022-10-25T03:35:40.218Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/posts/post-with-code/index.html</loc>
+    <lastmod>2022-10-25T03:35:40.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Drexel-UHC.github.io/hello-quarto/posts/welcome/index.html</loc>
+    <lastmod>2022-10-25T03:35:40.976Z</lastmod>
+  </url>
+</urlset>
