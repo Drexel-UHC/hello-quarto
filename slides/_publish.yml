@@ -1,0 +1,7 @@
+- source: index.qmd
+  quarto-pub:
+    - id: d7a0794d-c3e7-47cf-930a-c518838016cc
+      url: 'https://quartopub.org/sites/mine/hello-quarto'
+  netlify:
+    - id: 142930b4-ad12-467c-9ce3-1264a7177d6b
+      url: 'https://dapper-cactus-4d500b.netlify.app'

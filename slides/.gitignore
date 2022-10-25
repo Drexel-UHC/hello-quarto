@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.key
+*.m4v
+.DS_Store
+videos/*

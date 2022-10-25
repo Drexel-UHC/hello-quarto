@@ -1,0 +1,169 @@
+# Reimagine {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
+
+::: notes
+So we've seen already how much Quarto enables with teach/collab/share. And now I want to push it a bit further. What if we could reimagine open science and open source as part of the how we work at the UHC or DSPH.
+:::
+
+
+
+## {#culture-shifts .centered data-menu-title="Culture Shifts" background-color="#0F1620"}
+
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Culture shifts: <br> technical + human
+:::
+
+::: notes
+We're talking about a **profound culture shift** that involves real deliberate work on the tech and human side
+
+Let's focus on the human side: We can **build inclusion into our daily work**. Let's think about your team and collagues because I bet they're not different from the teams we mentor
+
+This means **talking** and reflecting with your colleagues: how do we work? shared workflows, where is friction? who contributes, how do they contributes? Handoffs?
+
+This means asking **questions** and really listening. might not have the language to describe where they're stuck. Not assuming, not solutioneering. But listening for understanding to meet them where they are
+
+This means being **braver** to say I don't know, I need help
+
+A practice, not a checklist. 
+
+A practical example - 
+:::
+
+
+##  {#faylab-manual-1 data-menu-title="FayLab Manual 1" background-color="#0F1620"}
+
+::: columns
+::: {.column width="60%"}
+::: borderbox
+[![](images/4-reimagine/faylab-labmanual.png){fig-alt="Screenshot of a Quarto site that is a lab manual of shared practices"}](https://thefaylab.github.io/lab-manual/)
+:::
+:::
+
+::: {.column width="40%"}
+:::
+:::
+
+::: notes
+Fay Lab Manual is a site created by Gavin Fay's Group UMass D
+They are quant fisheries ecologists: data and code: work with managers: food systems and climate
+Bc formal training in data science is uncommon in env, range of skills incoming
+This site: lab culture, code of conduct, info about how they name files, how to learn the software they use
+
+
+It's a living doc online, and it's imperfect
+
+It is radical in many ways, here are 3: 
+:::
+
+##  {#faylab-manual-2 data-menu-title="FayLab Manual 2" background-color="#0F1620"}
+
+::: columns
+::: {.column width="60%"}
+::: borderbox
+[![](images/4-reimagine/faylab-labmanual.png){fig-alt="Screenshot of a Quarto site that is a lab manual of shared practices"}](https://thefaylab.github.io/lab-manual/)
+:::
+:::
+
+::: {.column width="40%"}
+\
+\
+\
+
+::: {style="color: white;"}
+[**1. Make the implicit explicit**]{.midi}
+:::
+
+\
+
+::: fragment
+::: {style="color: white;"}
+[**2. Onboard learners as contributors**]{.midi}
+:::
+:::
+
+\
+
+::: fragment
+::: {style="color: white;"}
+[**3. Psychological safety & growth mindset**]{.midi}
+:::
+:::
+:::
+:::
+
+::: notes
+**Makes the implicit explicit** all be clear on how their group works together and it also puts the values forward and to welcome people who might be interested in joining the
+
+**onboards learners as contributors** As you read the manual you're also instructed how to contribute. So it's through learning tools like Quarto to fix a typo that empowers learners in a lasting way.
+
+**psychological safety & growth mindset** deliberately for example prioritzing time to check in during meetings and screensharing/live coding.
+
+Reimagining within one lab and that idea is catching at bigger scales -
+:::
+
+
+
+##  {#approach-guide .centered data-menu-title="Approach Guide" background-color="#0F1620"}
+
+::: columns
+::: {.column width="50%"}
+\
+\
+\
+
+::: borderbox
+[![](images/4-reimagine/approach-guide.png){fig-alt="Screenshot of a Quarto site that is a FAIR principles guide for SALURBAL"}](https://drexel-uhc.github.io/salurbal-project-dashboard/)
+:::
+:::
+
+::: {.column width="50%"}
+::: borderbox
+\
+\
+\
+
+[![](images/4-reimagine/nmfs-openscapes.png){fig-alt="Screenshot of a Quarto site that hosts open source resources at the UHC."}](https://drexel-uhc.github.io/analytics-corner/)
+:::
+:::
+:::
+
+::: notes
+We forked this idea back
+Here are 2 more examples: our Approach Guide which is how we onboard ourselves and others to grow the movement
+
+And NOAA Fisheries is using Quarto to building open science community across their science centers
+
+Using quarto for culture change
+:::
+
+
+## Quarto enables collaborating <br>across coding comfort levels {.takeaway .center}
+
+::: borderbox
+![](images/4-reimagine/visual_editor.png){fig-align="center" width="70%" fig-alt="RStudio IDE"}
+:::
+
+::: notes
+Quarto enables collaborating across coding comfort levels, which means it's a friendly tool
+Also means we can broaden our idea of collaborators substantially and earlier.
+
+And, then RStudio IDE Visual Editor further lowers barriers
+
+I'll do one final demo here - Friendly for new learners, also for experienced users. 
+
+Think about how you might use this yourself, and teach a colleague 
+:::
+
+##  {#demo-reimagine .center data-menu-title="Demo: Reimagine" background-video="videos/demo-4-reimagine.mp4" background-size="contain" background-color="#FFFFFF"}
+
+::: notes
+-   i can write and paste formatted text
+-   Add image, caption, alt text
+-   source editor
+-   citations 2 ways: \@ from my Zotero, forward-slash citation for doi
+-   Also: Call-outs
+-   Add extension:
+
+transition: throughtout talk, focus on quarto enables teach/collab/sharing. 
+culture. 
+Let's end with what we can all enable -
+:::

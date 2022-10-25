@@ -6,6 +6,7 @@ format:
     toc: true
     code-tools: true
     code-fold: true
+    code-link: true
 execute:
   warning: false
   error: false

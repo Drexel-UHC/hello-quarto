@@ -1,0 +1,270 @@
+# Share {.title-middle-dark background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape."}
+
+::: notes
+
+:::
+
+##  {#share-intro .center data-menu-title="Share Intro"}
+
+::: columns
+::: {.column width="70%"}
+![](images/1-share/mine-venn.svg){fig-alt="A Venn diagram with three circles -- education, research, and development. At the intersection is a blue heart with the word compassion."}
+:::
+
+::: {.column width="30%"}
+![](images/horst_penguins_nametag_mine.png){fig-alt="Penguin with nametag that says \"Mine\""}
+:::
+:::
+
+::: notes
+I work at the intersection  being an educator (teaching myself and sometimes other), researcher (within the context of statistics and public health) and a developer (i code a lot!).
+
+But at the end of the day my job is to take data, derive some insight and communicate it. Personally, I'm always thinking 'web first' because the web is the most accessible platform for communication but since also still live in the confines of traditional journal publishing and academia, which means I regularly need to create PDF versions of my work as well.
+
+Therefore an authoring system that allows for multiple types of outputs from a single source that contains both code and prose is not only a time saver, but it's basically essential for me to communicate my work. 
+
+And for the last decade, that tool for me has been R Markdown.
+:::
+
+
+## The R Markdown ecosystem
+
+![](images/1-share/rmd_ecosystem.png){fig-align="center" fig-alt="Hex logos for various packages from the R Markdown ecosystem."}
+
+::: notes
+Think of all the packages from the R Markdown universe that you've come to love and rely on over the years.
+Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.
+:::
+
+## Quarto: Next generation R Markdown {transition="zoom"}
+
+![](images/horst_quarto_ball_straight.png){fig-align="center" width="50%" fig-alt="Quarto logo."}
+
+::: notes
+Quarto unifies the functionality from these packages,
+
+building on Pandoc on the technical side
+
+and on the human side -- over a decade of experience developing, maintaining, and tweaking these packages as well as community feedback R Markdown extension packages.
+
+Such a unification effort presents a fantastic  opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different.
+:::
+
+## Quarto highlights
+
+::: columns
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+::: bulletbox
+::: {.fragment .fade-in-then-semi-out}
+![](images/horst_quarto_ball-1_4.png){width="50px" fig-alt="One quadrant of the Quarto logo."} Consistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.
+:::
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+::: bulletbox
+::: {.fragment .fade-in-then-semi-out}
+![](images/horst_quarto_ball-2_4.png){width="50px" fig-alt="Two quadrants of the Quarto logo."} More accessible defaults as well as better support for accessibility
+:::
+:::
+:::
+
+::: {.column width="5%"}
+:::
+:::
+
+::: columns
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+::: bulletbox
+::: {.fragment .fade-in-then-semi-out}
+![](images/horst_quarto_ball-3_4.png){width="50px" fig-alt="Three quadrants of the Quarto logo."} Guardrails, particularly helpful for new learners: YAML completion, informative syntax errors, etc.
+:::
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+::: bulletbox
+::: {.fragment .fade-in-then-semi-out}
+![](images/horst_quarto_ball-4_4.png){width="50px" fig-alt="Four quadrants of the Quarto logo."} Support for other languages like Python, Julia, Observable, and more via Jupyter engine for executable code chunks.
+:::
+:::
+:::
+
+::: {.column width="5%"}
+:::
+:::
+
+::: notes
+Some highlights of these improvements include
+
+--\> consistent implementation of attractive and handy features across *all* outputs, like tabsets, code-folding, and syntax highlighting,
+
+--\> more accessible defaults as well as better support for creating accessible documents,
+
+--\> guardrails that are particularly helpful for new learners, like YAML completion and informative syntax errors,
+
+--\> and perhaps most excitingly for those who are not coming from the R ecosystem, Quarto offers support for other languages like Python, Julia, Observable, and more via the Jupyter engine for executable code chunks.
+And it's designed to be expandable to more engines and languages, even those that might not exist today.
+
+[pause] So by now I'm assuming many of you have already started playing with Quarto, or you're waiting for me to do that.
+So, let's dive in and see what all the Quarto fuss is about!
+:::
+
+## Live Demo  {#demo-share .centered data-menu-title="Demo: Share" background-video="videos/demo-1-share.mp4" background-size="contain" background-color="#FFFFFF"}
+
+- Demo 1a: single document prose
+- Demo 1c: single document code
+- Demo 2: multiple document website
+- Demo 3: JSS article
+
+::: notes
+-   Open hello.Rmd with source editor -\> knit
+-   Change to visual editor -\> knit
+-   Close file -\> change file type to .qmd -\> open + render
+-   Change `output: html_document` to `format: html` -\> render
+-   Click on Render on save
+-   Change to `format: pdf` -\> render -\> then change back
+-   Add chunk option `echo: false` to the first chunk
+-   Add `execute` > `echo: false` to the yaml
+-   Add alt text to figure in second code chunk -\> save to render
+-   Change to `format: revealjs` -\> save to render
+-   Add H2 to break slides
+-   Change to `format: html`
+-   Add `index.qmd` with File \> New Quarto Document
+-   Add `_quarto.yml` for website
+-   Relaunch project
+-   Show new Build tab
+-   Render site, show `_site` folder
+-   Add freeze to _quarto.yml
+-   From terminal: `quarto publish`
+:::
+
+## Quarto CLI orchestrates<br>each step of rendering {.takeaway .center}
+
+::: {.fragment .fade-up}
+![](images/horst_qmd_render_schema.png){fig-alt="A schematic representing rendering of Quarto documents from .qmd, to knitr or jupyter, to plain text markdown, then converted by pandoc into any number of output types including html, PDF, or Word document." fig-align="center"}
+:::
+
+::: notes
+Now that you've all had a chance to see Quarto in action, you might be wondering, "how are R Markdown and Quarto different"?
+
+The main difference is that R markdown is fundamentally tied to R. But Quarto is its own software that is compute agnostic meaning it can work for multiple computational languages(R, Python, Julia, Observable); it was in fact design to be able to be flexible enough to accommodate languages that haven't even existed yet.
+
+Quarto CLI, does the orchestration of processing executable code chunks with either knitr or jupyter and then converting the resulting markdown file to the desired output.
+
+While this is technically impressive, I'll be honest, it's not exactly what sparked my interest in Quarto in the first place.
+:::
+
+## Quarto makes moving between formats straightforward {.takeaway .center}
+
+::: columns
+::: {.column width="33%"}
+::: fragment
+Document
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: html
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Presentation
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: revealjs
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Website
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} _quarto.yml
+:::
+
+``` yaml
+project:
+  type: website
+
+website: 
+  navbar: 
+    left:
+      - lesson-1.qmd
+```
+:::
+:::
+:::
+
+::: notes
+What did spark my interest was how how straightforward it is with Quarto to move between output formats.
+
+As an educator, two things are of utmost importance to me about the tools I use to create my materials: reproducibility and ease of transition between output formats, like documents to slides to websites to books.
+
+Over the last year of using Quarto for pretty much everything, I've felt like I've finally found the tool that lets me go from one output type to the other with minimal, if any, futzing around with my source code beyond the yaml.
+For example, here are common things I produce
+
+--\> a lesson in document form <br>
+--\> the same content in presentation form <br>
+--\> the same content on a page in a website,
+
+and you can see that all that needed to change going between these formats is a few lines in the yaml.
+Nothing in the content part of my document.
+No slide breaks to remove, no citation style to change, no headings to re-level.
+This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!
+:::
+
+## Quarto facilitates open sharing {.takeaway .center}
+
+<br>
+
+::: {.fragment .fade-up .midi}
+Tooling that makes it easy to share what you do<br> with the world on the web is incredibly useful
+:::
+
+<br>
+
+::: {.fragment .fade-up .midi}
+It's useful not just to you, but to the world<br> as it facilitates open sharing of knowledge<br> for learning and for reuse
+:::
+
+::: notes
+Ultimately, easily creating reproducible artifacts is great.
+
+But for the sharing story to be complete, the tool also needs to support easily *sharing* those artifacts, like with a simple command like `quarto publish`, and hopefully soon a button RStudio that does the same thing.
+
+--\> I think that tooling that makes it easy to share what you do with the world on the web is incredibly useful.
+
+--\> And it's not just useful to you, the creator, but to the world, as it facilitates open sharing of knowledge for learning and for reuse.
+
+\[Pause\]
+
+I've been talking just about me and my work so far, but I, like many of you, don't operate in a silo disconnected from others.
+
+**[Mine continue on next slide]**
+:::

@@ -1,0 +1,91 @@
+# Collaborate {.title-top-ice background-image="images/horst_penguins_telescope.png" aria-label="One penguin standing on another penguin's shoulders in a snowscape, looking through a telescope at a Quarto logo moon in the night sky."}
+
+::: notes
+At the core of Quarto is designed to make collaborating easier. 
+:::
+
+
+
+##  {#many-use-python .center .centered data-menu-title="Many use Python" background-color="#0F1620"}
+
+[Not everyone uses R 😬]{.larger}
+
+::: notes
+In the academia and industry, there are many language being used. Multi-lingual teams often struggle to find a common place to build together. 
+:::
+
+
+
+## Quarto enables collaborating <br>across coding languages {.takeaway .center highlight-style="github"}
+
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} _quarto.yml
+:::
+
+``` {.yaml code-line-numbers="2,4,8,11"}
+contents:
+  - section: in-development/index.qmd
+    contents:
+      - in-development/earthdata-access-demo.ipynb
+      - in-development/nsidc/icesat2-cmr-onprem-vs-cloud.ipynb
+      - in-development/lpdaac/lpdaac_ecostress_lste_kerchunk.ipynb
+      - in-development/matlab-aws.qmd
+      - in-development/earthdata-python-r-handoff.rmd  
+  - section: contributing/onboarding.qmd
+    contents: 
+      - contributing/quarto-website-tutorial.md
+```
+
+::: notes
+Quarto enables collaborating across coding languages. This is a simplified view of the yaml for a demo quarto project; it's collection of different file types. Some of them an .qmd files some of them are python notebooks some are rmd files and some are plain markdown.
+
+In this quarto project Python users can run and freeze their computations on their setup. R users and run and freeze their computations on their setup. But both parties can use Quarto to render this website together without any need to change their own setups. 
+
+So the fact that we don't need everyone ot  changing their tooling  and come together and bring whatever they have created  in an  environment that they feel comfortable in  is a realy neat feature of Quarto. 
+:::
+
+## Quarto enables contributing <br>from our current tools {.takeaway .center}
+
+::: centered
+::: columns
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-rstudio-ide.png){fig-alt="Screenshot of RStudio IDE" width="80%"}
+:::
+:::
+
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-jupyterhub.png){fig-alt="Screenshot of Jupyter Lab" width="80%"}
+:::
+:::
+:::
+
+::: columns
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-github-ide.png){fig-alt="Screenshot of GitHub IDE" width="80%"}
+:::
+:::
+
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-vscode-ide.png){fig-alt="Screenshot of VS Code IDE" width="80%"}
+:::
+:::
+:::
+:::
+
+::: notes
+What is really neat of about Quarto is that it is multi-tool. FOlks choose  where they want ot be  writing code or prose  and get comfortable with it. And when they get comfortable with that asking them to  change where their doing their work just to collaborate with you is often faced with resistance. People sor tof want to stay in their own home and wish their collaborator would come to them.
+
+One  alternative is to say you can stay in your own home  and you can collaborate wiht me on the  same project from where ever you are. 
+:::
+
+## ipynb + JupyterLab Get Started  {#demo-collaborate .center data-menu-title="Demo: Collaborate" background-video="videos/demo-2-collaborate.mp4" background-size="contain" background-color="#FFFFFF"}
+
+::: {style="text-align: center; margin-top: 1em"}
+[Getting started with multi-tool/language documentation](https://quarto.org/docs/get-started/){preview-link="true" style="text-align: center"}
+:::
+

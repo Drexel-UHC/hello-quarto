@@ -1,0 +1,64 @@
+# Teach {.title-middle-ice background-image="images/horst_quarto_penguins_teach.png" aria-label="Two penguins in a room made of ice, looking out a window. One penguin is holding an icicle as a pointer, pointing at a Quarto logo moon in the sky, while the other penguin looks on."}
+
+::: notes
+Quarto has profound implications both for educators and students. Quarto is a tool that they can pick up easily on the first day of an intro course, and it grows with them as their statistical and computational expertise grows.
+However, as students' expertise in these areas grow, the computation gets more resource intensive (and even sometimes involving multiple languages) and they end up needing different output formats to support their needs, like PDFs in specific journal styles or a thesis with multiple chapters.
+A pleasant surprise in teaching with Quarto has been how much less steep the learning curve is for making this transition from single, simple document to a multi-document projects.
+Let me tell you the story of one of my thesis students.
+:::
+
+
+## Teaching Demo {#demo-teach .centered data-menu-title="Demo: Teach" background-video="videos/demo-3-teach.mp4" background-size="contain" background-color="#FFFFFF"}
+
+
+- Demo 1b: Quarto Slides
+- Demo 3: Quarto JSS Article
+
+::: notes
+For learning:
+
+-   RStudio comes with everything, no additional install needed
+-   visual editor -- Julie will say more
+-   code-link
+-   yaml errors
+
+For teaching:
+
+-   revealjs
+-   Show hamburger menu outline and print to PDF
+-   chalkboard
+-   multiplex: Slides / scroll for audience
+-   execute > echo: true
+-   Add code line highlighting to plotting chunk
+
+Features that are useful for research: 
+
+- quarto journals
+:::
+
+## Quarto flattens the learning curve {.takeaway .center}
+
+![](images/3-teach/many-qmd-to-output.png){width="70%" fig-alt="A schematic showing many qmd files, going through Quarto, to generate an HTML, PDF, or Word document or more. The Quarto logo is depicted as a baseball a penguin is spinning." fig-align="center"}
+
+::: notes
+SQuarto flattens the learning curve. This basically means when  we levelin up form a single odcument to a multi document input and going to variosu output types. Quarto was built with accessibility in mind. its features help flatten this curve for example consistent citation syntax, more intentional control over when computations should run or rerun, and a single, minimal and human readable yaml that controls inputs, layouts, theming, etc. all contribute to flattening this learning curve.
+:::
+
+## Quarto can grow with learners in a profound way {.takeaway .center}
+
+<br>
+
+::: {.fragment .fade-up}
+![](images/3-teach/many-lang-qmd-to-output.png){fig-alt="A schematic showing many computing languages (R, Python, Julia, Observable, and more) going into many single qmd files, going through Quarto, to generate an HTML, PDF, or Word document or more. The Quarto logo is depicted as a baseball a penguin is spinning." fig-align="center"}
+:::
+
+::: notes
+
+And beyond learners growing and expanding the scope of their work easily with Quarto, Quarto can grow with them in a profound way as well.
+
+- Quarto is open sourced meaning it is free and accessible to everyone.
+- Quarto grows as a student grows. It is easy to start with single documents but also allows multi-document projects.
+- Quarto is language and authoring tool independent offers an opportunity for folks to take Quarto with them on their journey, wherever that journey takes them. 
+
+
+:::
