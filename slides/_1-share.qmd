@@ -41,11 +41,7 @@ Each package addresses a different need and offers a different output: for examp
 ![](images/horst_quarto_ball_straight.png){fig-align="center" width="50%" fig-alt="Quarto logo."}
 
 ::: notes
-Quarto unifies the functionality from these packages,
-
-building on Pandoc on the technical side
-
-and on the human side -- over a decade of experience developing, maintaining, and tweaking these packages as well as community feedback R Markdown extension packages.
+Quarto unifies the functionality from these packages, and provides a software that is unlinked from R and can be generalized to all languages.
 
 Such a unification effort presents a fantastic  opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different.
 :::

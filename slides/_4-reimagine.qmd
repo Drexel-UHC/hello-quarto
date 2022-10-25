@@ -153,17 +153,6 @@ I'll do one final demo here - Friendly for new learners, also for experienced us
 Think about how you might use this yourself, and teach a colleague 
 :::
 
-##  {#demo-reimagine .center data-menu-title="Demo: Reimagine" background-video="videos/demo-4-reimagine.mp4" background-size="contain" background-color="#FFFFFF"}
+## Summary
 
-::: notes
--   i can write and paste formatted text
--   Add image, caption, alt text
--   source editor
--   citations 2 ways: \@ from my Zotero, forward-slash citation for doi
--   Also: Call-outs
--   Add extension:
-
-transition: throughtout talk, focus on quarto enables teach/collab/sharing. 
-culture. 
-Let's end with what we can all enable -
-:::
+Thank you for your time and happy to take questions. 
