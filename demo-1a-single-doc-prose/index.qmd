@@ -1,7 +1,8 @@
 ---
 title: "Hello Quarto"
 subtitle: "A document to demo Quarto features"
-output: html_document
+format: html
+bibliography: references.bib
 ---
 
 # Introduction
