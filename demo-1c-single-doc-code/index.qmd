@@ -22,8 +22,6 @@ author:
     orcid: 0000-0003-0918-3766
 abstract: |
  What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.  snippets are employed that have been inspired by @Biswas2022, What did the fox say. What did the fox say. 
-keywords: [JSS, style guide, comma-separated, not capitalized, R]
-keywords-formatted: [JSS, style guide, comma-separated, not capitalized, "[R]{.proglang}"]
 editor: 
   markdown: 
     wrap: 72
@@ -178,13 +176,12 @@ the fox say. What did the fox say. What did the fox say.
 
 ```{r}
 tab_model(m1, m2)
-
 ```
 
 ## Discussion
 
-Foxes are cute @Fox2020. We also show this in @fig-plot. However our
-modeling reports that tail length significantly affects cuteness, see
-@tbl-map. What did the fox say. What did the fox say. What did the fox
-say. What did the fox say. What did the fox say. What did the fox say.
-What did the fox say. What did the fox say. What did the fox say.
+Foxes are cute @Sparkes2022 We also show this in @fig-plot. However our
+modeling reports that tail length significantly affects cuteness. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say. What did the
+fox say. What did the fox say. What did the fox say.
