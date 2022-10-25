@@ -2,7 +2,7 @@
 title: "Hello Quarto"
 subtitle: "A document to demo Quarto features"
 author: "Thomas Bayes"
-date: "2022-10-23"
+date: "2022-10-24"
 format: html
 bibliography: references.bib
 ---

@@ -2,7 +2,7 @@
 title: "Mock Paper"
 subtitle: "A reproducible manuscript written in Quarto."
 description: "A reproducible manuscript written in Quarto."
-date: "2022-10-24"
+date: "2022-10-25"
 image: "quarto.png"
 format: 
   html:
