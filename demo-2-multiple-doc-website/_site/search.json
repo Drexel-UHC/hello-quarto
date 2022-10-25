@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nOct 24, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html",
+    "href": "posts/demo-1-single-doc-prose/index.html",
+    "title": "Hello Quarto",
+    "section": "",
+    "text": "Quarto allows us to weave computation and prose into publication and web ready outputs. Visit the Quarto website to get started.\n\n\n\nQuarto schematic"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#table-of-contents",
+    "href": "posts/demo-1-single-doc-prose/index.html#table-of-contents",
+    "title": "Hello Quarto",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nIn the YAML we can specify toc: true"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#latex",
+    "href": "posts/demo-1-single-doc-prose/index.html#latex",
+    "title": "Hello Quarto",
+    "section": "Latex",
+    "text": "Latex\n\\[\ne=mc^2\n\\tag{1}\\]\n\\[\nx^n+y^n=z^n\n\\tag{2}\\]\nInline latex \\(x^n+y^n=z^n\\) can also be written"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#citations",
+    "href": "posts/demo-1-single-doc-prose/index.html#citations",
+    "title": "Hello Quarto",
+    "section": "Citations",
+    "text": "Citations\n\nDOI: (Quistberg et al. 2018)\nPubMed: (Packer et al. 2021)\ninline citation: according to Sparkes (2021) cats are awesome!"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#cross-references",
+    "href": "posts/demo-1-single-doc-prose/index.html#cross-references",
+    "title": "Hello Quarto",
+    "section": "Cross references",
+    "text": "Cross references\nWe can reference Equation 2."
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#callouts",
+    "href": "posts/demo-1-single-doc-prose/index.html#callouts",
+    "title": "Hello Quarto",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\n\nThis is a Note callout.\n\n\n\n\n\n\n\n\nClick here for a warning!\n\n\n\n\n\nDANGER WILL ROBINSON!"
+  },
+  {
+    "objectID": "posts/demo-1-single-doc-prose/index.html#tabsets",
+    "href": "posts/demo-1-single-doc-prose/index.html#tabsets",
+    "title": "Hello Quarto",
+    "section": "Tabsets",
+    "text": "Tabsets\n\nDataVisualizationModel Results\n\n\ndata table\n\n\nplot\n\n\nmodel summary"
+  }
+]
